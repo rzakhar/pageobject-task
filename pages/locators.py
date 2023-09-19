@@ -7,6 +7,7 @@ class BasePageLocators():
     VIEW_BASKET = (By.CSS_SELECTOR, "a[href$='/basket/'")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
+
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "form#login_form")
     LOGIN_EMAIL = (By.CSS_SELECTOR, "input#id_login-username")
@@ -20,6 +21,7 @@ class LoginPageLocators():
     REGISTER_CONFIRM_PASSWORD = (By.CSS_SELECTOR, "input#id_registration-password2")
     REGISTER_SUBMIT = (By.CSS_SELECTOR, "button[name='registration_submit']")
 
+
 class ProductPageLocators():
     ADD_TO_BASKET = (By.CSS_SELECTOR, "button.btn-add-to-basket")
     BASKET_TOTAL = (By.CSS_SELECTOR, ".alertinner p strong")
@@ -27,6 +29,7 @@ class ProductPageLocators():
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     BASKET_ADD_BTN = (By.CLASS_NAME, "btn-add-to-basket")
+
 
 class BasketPageLocators():
     BASKET_IS_EMPTY_TEXT = (By.CSS_SELECTOR, "div#content_inner > p")

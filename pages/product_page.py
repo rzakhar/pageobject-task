@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
-import math
+
 
 class ProductPage(BasePage):
 
@@ -17,7 +17,6 @@ class ProductPage(BasePage):
     def should_be_correct_name(self):
         items_strong = self.browser.find_elements(*ProductPageLocators.BASKET_STRONG_NAMES)
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
-        basket_product_name = ''
         names_equal = False
         for item_strong in items_strong:
             if item_strong.text == product_name:
