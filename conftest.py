@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options as OptionsChrome
 from selenium.webdriver.firefox.options import Options as OptionsFirefox
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default="fi",
+    parser.addoption('--language', action='store', default="en-gb",
                      help="Choose language. Supported languages: ar, cs, ca, da, de, en-gb, el, es, fi, fr, it, ko, "
                           "nl, pl, pt, pt-br, ro, ru, sk, uk, zh-hans")
     parser.addoption('--browser_name', action='store', default="chrome",
